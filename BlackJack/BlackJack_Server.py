@@ -150,7 +150,7 @@ def chat_server():
                                     BroadcastToSomeone(player[turn],"\nAdd or Not(y/n)\n")
                                 else:
                                     Game_Started=0
-                                    while checkOne(HostCard)<=17:
+                                    while checkOne(HostCard)<17:
                                         HostCard.append(Deal())
                                     BroadcastToAll(server_socket,"Host's Card:")
                                     for i in HostCard:
