@@ -110,7 +110,7 @@ def chat_server():
                                         ####重複的code###
                                         Game_Started=0
                                         EndGame()
-                                        while checkOne(HostCard)<=17:
+                                        while checkOne(HostCard)<17:
                                             HostCard.append(Deal())
                                         BroadcastToAll(server_socket,"Host's Card:")
                                         for i in HostCard:
